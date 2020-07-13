@@ -42,21 +42,10 @@ public class Payments {
     
     return null;
   }
-  
-  public static  String randomString() {
-    String chars="0123456789";
-    
-    Random rand = new Random(); 
-    StringBuilder buf = new StringBuilder(); 
-    
-      for (int i=0; i<20; i++) { 
-      buf.append(chars.charAt(rand.nextInt(chars.length()))); 
-      } 
-      
-  return buf.toString(); 
-  
-  } 
-  
+  /**
+   * 
+   * @return un string con el numero random 
+   */
   public static  String randomGerardo() {
      
     return new Random()
