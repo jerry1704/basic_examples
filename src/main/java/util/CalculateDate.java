@@ -1,10 +1,6 @@
 package util;
 
-import static java.time.Instant.ofEpochMilli;
 import static java.time.ZoneOffset.UTC;
-import static java.time.ZonedDateTime.ofInstant;
-import static java.time.ZonedDateTime.now;
-
 import java.time.Duration;
 import java.time.ZonedDateTime;
 
@@ -18,7 +14,7 @@ public class CalculateDate {
    * @param recentDate the most recent date.
    * @return an integer value with the calculation.
    */
-  private static boolean countDaysElapsed(ZonedDateTime oldDate, ZonedDateTime hoy) {
+  public static boolean countDaysElapsed(ZonedDateTime oldDate, ZonedDateTime hoy) {
      
   int valor = (int) Duration
       .between(
